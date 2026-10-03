@@ -71,11 +71,11 @@ Leave gaps between the ranges. On ESP32, ADC2 pins cannot be used while WiFi is 
 
 | Code | Value | Sent when |
 | --- | ---: | --- |
-| `EVENT_OK` | 0 | `setup()` finished |
+| `EVENT_INIT` | 0 | `setup()` finished |
 | `EVENT_DOWN` | 20 | Button pressed (after debounce) |
-| `EVENT_LONG_HOLD` | 40 | Held longer than `longPressMs`, then repeated; `longPressCounter` counts them |
-| `EVENT_SHORT_PRESSED` | 30 | Released before the long-press time |
-| `EVENT_LONG_PRESSED` | 50 | Released after a long hold |
+| `EVENT_LONG_HOLD` | 30 | Held longer than `longPressMs`, then repeated; `longPressCounter` counts them |
+| `EVENT_SHORT_PRESSED` | 25 | Released before the long-press time |
+| `EVENT_LONG_PRESSED` | 35 | Released after a long hold |
 
 `EVENT_ERR`, `EVENT_WARN` and `EVENT_NOTICE` are reserved. `chrBtn::eventName(code)` returns a readable name.
 
