@@ -22,7 +22,7 @@ void chrBtn::setup() {
 #endif
     }
     _lastState = _sample();
-    _fireEvent(EVENT_OK);
+    _fireEvent(EVENT_INIT);
 }
 
 chrBtn chrBtn::analog(const char* id, uint8_t pin, uint16_t minVal, uint16_t maxVal,
@@ -55,7 +55,7 @@ const char* chrBtn::eventName(EventCode code) {
     switch (code) {
         case EVENT_ERR:           return "error";
         case EVENT_WARN:          return "warning";
-        case EVENT_OK:            return "ok";
+        case EVENT_INIT:          return "init";
         case EVENT_NOTICE:        return "notice";
         case EVENT_DOWN:          return "down";
         case EVENT_SHORT_PRESSED: return "short pressed";

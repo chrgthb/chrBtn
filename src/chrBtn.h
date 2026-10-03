@@ -9,13 +9,13 @@ public:
     // Event codes
     enum EventCode {
         EVENT_ERR           = -10,
-        EVENT_WARN          = -1,
-        EVENT_OK            = 0,
+        EVENT_WARN          = -5,
+        EVENT_INIT          = 0,
         EVENT_NOTICE        = 10,
         EVENT_DOWN          = 20,
-        EVENT_SHORT_PRESSED = 30,
-        EVENT_LONG_HOLD     = 40,
-        EVENT_LONG_PRESSED  = 50
+        EVENT_SHORT_PRESSED = 25,
+        EVENT_LONG_HOLD     = 30,
+        EVENT_LONG_PRESSED  = 35
     };
 
     // id: button identifier, truncated to ID_MAX_LEN characters

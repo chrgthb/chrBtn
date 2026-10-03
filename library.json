@@ -1,6 +1,6 @@
 {
   "name": "chrBtn",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Button library for the Arduino framework",
   "keywords": "esp32, arduino, button",
   "repository": {
